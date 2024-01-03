@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 1100px;
+    margin-left: 2%;
+    margin-right: 6%;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+.title{
+    font-size: 150%;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .iconCart{
+   position: relative;
+   cursor: pointer;
+}
+header .iconCart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    right: -10px;
+}
+.addcart{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.card{
+    width:300px;
+    background-color: gray;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 70px 1fr 50px;
+}
+.card h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 400;
+}
+.card .checkout{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ 
+}
+.card .checkout .totalPrice{
+    background-color: yellow;
+    border: none;
+    font-family: 'roboto';
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ .card .checkout .close{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+ }
+.listProducts{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 15px;
+    margin: auto;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20%;
+}
+.article{
+    background-color: white;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow: 5px 10px 0 gainsboro;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 90%;
+    height: max-content;
+
+}
+.article .tittle{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3%;
+}
+.article img{
+    width: 60%;
+    height: 45%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.article .libelle{
+    font-size: 15px;
+    padding: 3%;
+    font-weight: bold;
+}
+.article .details{
+   font-size: 15px;
+   font-style: italic;
+   margin-bottom: 5%;
+   align-content: stretch;
+   padding: 2%;
+   text-align: center;
+}
+.article .price{
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.article button{
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 2%;
+  margin: 5%;
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+}
+.monPanierAchat{ 
+  justify-content: center;
+}
+   
+.monPanierAchat .divPanier{
+    display: flex;
+    grid-template-columns: 100px repeat(4,1fr);
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+    width: 90%;
+    margin: 2%;
+    border-radius: 3%;
+    border: 1px solide black;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+}
+.monPanierAchat .divPanier .titre{
+  width: 1%;
+  padding-right: 0%;
+  font-size: 2%;
+}
+.monPanierAchat .divPanier .tittleCard{
+    font-size: 80%;
+    width: 20%;
+  }
+.monPanierAchat .divPanier img{
+    width: 20%;
+    padding: 3%;
+    margin-left: 1%;
+}
+
+.monPanierAchat .divPanier .btnselection{
+    display: flex;
+    justify-content: space-between;
+     width: 180%;
+}
+.pricePanier{
+    font-size: 80%;
+    width: 15%;
+}
+
+.btn{
+    height: 50%;
+    margin-left: 5%;
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+    border: 1px;
+}
+
